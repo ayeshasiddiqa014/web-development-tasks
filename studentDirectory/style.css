@@ -1,0 +1,37 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f8; /* Soft gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+th,
+td {
+    border: 1px solid #dbe4eb; /* Light blue-gray border */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #c8d6e5; /* Soft blue-gray header background color */
+    color: #333; /* Darker text color for headers */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf2f7; /* Light blue-gray alternate row background color */
+}
+
+tbody tr:hover {
+    background-color: #dae2e9; /* Hover effect color */
+}

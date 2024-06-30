@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum Numbers</title>
+</head>
+<body>
+    <script language="javascript">
+        let sum = 0;
+        while (true) {
+            let num = prompt("Please enter a number (Enter 0 to end):", "0");
+            num = parseFloat(num);
+            if (num === 0) {
+                break;
+            }
+            sum += num;
+        }
+        document.write("The sum of the numbers is: " + sum);
+    </script>
+</body>
+</html>

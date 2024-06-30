@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Repeat Message</title>
+    <script language="javascript">
+        function repeatMessage() {
+            let times = prompt("Please enter the number of times to display the message:", "1");
+            times = parseInt(times);
+            let message = prompt("Please enter the message to display:", "Hello");
+            for (let i = 0; i < times; i++) {
+                document.write(message + "<br>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onClick="repeatMessage()">Repeat Message</button>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Area</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <h2>Member Login</h2>
+      <form action="/login" method="post">
+        <div class="input-group">
+          <input type="text" id="username" name="username" placeholder="Username" required>
+          <input type="checkbox" id="remember-username" name="remember-username">
+          <label for="remember-username">Remember Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <input type="checkbox" id="remember-password" name="remember-password">
+          <label for="remember-password">Remember Password</label>
+        </div>
+        <div class="login-controls">
+          <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="signup-section">
+      <h2 style="background-color: grey;">Sign Up It's Free</h2>
+      <form action="/signup" method="post">
+        <div class="personal-details">
+          <input type="text" id="new-username" name="new-username" placeholder="Username" required>
+          <input type="password" id="new-password" name="new-password" placeholder="Password" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm Email" required>
+          <h3>Personal Details</h3>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+          <input type="email" id="re-enter-email" name="re-enter-email" placeholder="Re-enter Email" required>
+          <input type="text" id="city" name="city" placeholder="City" required>
+          <input type="text" id="province" name="province" placeholder="Province" required>
+          <input type="text" id="address1" name="address1" placeholder="Address 1" required>
+          <input type="text" id="address2" name="address2" placeholder="Address 2" required>
+        </div>
+        <div class="country-select">
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <!-- Add country options here -->
+          </select>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

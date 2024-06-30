@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .login-section, .signup-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="password"] {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .input-group label {
+    order: 3;
+  }
+  
+  .input-group input[type="checkbox"] {
+    order: 2;
+  }
+  
+  h2 {
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* Rest of your CSS code */
+  
+  
+  .personal-details h3 {
+    background-color: #ddd;
+    padding: 5px;
+  }
+  
+  form {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ddd;
+  }
+  
+.login-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .forgot-password {
+    margin-right: 10px; 
+  }
+  
+ 
+  button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  button:hover {
+    background-color: #4cae4c;
+  }
+  

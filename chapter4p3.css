@@ -1,0 +1,111 @@
+h1,
+h2,
+h3,
+nav,
+footer {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    vertical-align: top;
+    padding: 0.5em 0.75em;
+    border-radius: 10px;
+}
+
+tbody {
+    line-height: 1.5em;
+    vertical-align: top;
+    padding: 0.5em 0.75em;
+}
+
+td {
+    line-height: 1.5em;
+    vertical-align: top;
+    padding: 0.5em 0.75em;
+}
+
+legend {
+    background-color: #AEE5D8;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+fieldset {
+    margin: 1em auto;
+    background-color: #D2F4EE;
+    width: 70%;
+    border-radius: 10px;
+}
+
+form p {
+    margin-top: 0.5em;
+}
+
+.rightBoxes {
+    border: 1pt solid #93B7AF;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+.rec {
+    background-color: #AEE5D8;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.rounded:hover {
+    color: white;
+    background-color: #3C7A89;
+    border: 1px solid #2B4C51;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0.3em;
+    width: 7em;
+}
+
+.round {
+    color: white;
+    background-color: #3C7A89;
+    border: 1px solid #2B4C51;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0.3em;
+    width: 7em;
+}
+
+.leftBoxes {
+    border: 1pt solid #93B7AF;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+    float: left;
+    border-radius: 10px;
+}
+
+.centerBoxes {
+    border: 1pt solid #93B7AF;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+}

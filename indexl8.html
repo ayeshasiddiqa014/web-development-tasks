@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #808080;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #000;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1d1b1b;
+            color: white;
+            text-align: center;
+        }
+
+        .facebook,
+        .twitter {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+        }
+
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .terms {
+            background-color: #1d1b1b;
+            text-align: left;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .facebook,
+        .twitter {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .facebook a,
+        .twitter a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+        }
+
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .facebook i,
+        .twitter i {
+            margin-right: 8px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let firstName = document.forms["signupForm"]["firstName"].value;
+            let lastName = document.forms["signupForm"]["lastName"].value;
+            let email = document.forms["signupForm"]["email"].value;
+            let password = document.forms["signupForm"]["password"].value;
+            let agree = document.forms["signupForm"]["agree"].checked;
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+
+            if (firstName === "") {
+                alert("First Name must be filled out");
+                return false;
+            }
+            if (lastName === "") {
+                alert("Last Name must be filled out");
+                return false;
+            }
+            if (email === "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            if (password === "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            if (!passwordPattern.test(password)) {
+                alert("Password must be at least 8 characters long and contain at least 1 uppercase letter, 1 lowercase letter, 1 digit, and 1 special character");
+                return false;
+            }
+            if (!agree) {
+                alert("You must agree to the terms and conditions");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="2" class="facebook">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Connect with
+                        Facebook</a>
+                </td>
+                <td colspan="2" class="twitter">
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Connect with
+                        Twitter</a>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4">Or Sign Up with</th>
+            </tr>
+            <form name="signupForm" onsubmit="return validateForm()" action="/submit-form" method="post">
+                <tr>
+                    <td colspan="2"><input type="text" name="firstName" placeholder="First Name" style="width: 100%;">
+                    </td>
+                    <td colspan="2"><input type="text" name="lastName" placeholder="Last Name" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="email" name="email" placeholder="your@email.com" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="password" name="password" placeholder="********" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="terms">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree" style="color: white;">By creating an account, you agree to our <a
+                                href="https://www.example.com/terms" target="_blank"
+                                style="color: rgb(31, 99, 181);">Terms & Conditions</a></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="submit" value="Create account" class="submit-btn">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>

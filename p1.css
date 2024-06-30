@@ -1,0 +1,187 @@
+h1,
+h2,
+h3,
+nav,
+footer {
+    font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+
+body {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+    font-size: 100%;
+    background-color: #14919B;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 0.75rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    letter-spacing: 1px;
+}
+
+nav {
+    font-size: 1.125rem;
+}
+
+a:link {
+    font-weight: bold;
+    color: #14919B;
+}
+
+a:visited {
+    color: #0AD1C8;
+    color: (46, 75, 48);
+}
+
+a:hover {
+    background-color: #c9dbf4 ;
+}
+
+header,
+footer {
+    color: white;
+    background-color:#0B6477 ;
+    margin-top: 0em;
+    margin-right: 4em;
+    margin-bottom: 0.5em;
+    margin-left: 4em;
+}
+
+hgroup {
+    padding: 0.5em;
+}
+
+nav {
+    background-color: #E3EDF8;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav {
+    padding: 0.25em;
+}
+
+nav a {
+    padding: 0.25em;
+}
+
+article {
+    background-color: #E3EDF8;
+    margin-top: 1em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+    margin-left: 4em;
+    padding: 0.5em;
+}
+
+.line {
+    font-size: 0.875rem;
+    color: #6c787d;
+    font-style: italic;
+}
+
+figcaption {
+    font-size: 0.875rem;
+    color: #728B96;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+figure {
+    margin-top: 0.5em;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+}
+
+figure img {
+    padding: 0.25em;
+    border: solid 1.5px #999999;
+    max-width: 95%;
+    height: auto;
+    
+}
+
+figure div
+{
+    margin: 0.25em 0 2em 0;
+    padding: 0.5em;
+    width: 485px;
+    background-color: #658281;
+    border: solid 1.5px #FFEDFA;
+    border-radius: 4px;
+    background-repeat: repeat-x;
+}
+
+figure div p {
+    text-align: left;
+    margin: 0;
+}
+
+figure div img {
+    display: inline;
+    vertical-align: middle;
+    margin: 0; 
+    max-width: 1em; 
+    border: none;
+    padding: 0;
+}
+
+
+.related-photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.related-photos img {
+    max-width: 100%;
+    max-height: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 2px;
+
+}
+
+#reviews {
+    margin-top: 1em;
+}
+
+#reviews div {
+    border-bottom: dotted 1pt #999999;
+    margin-bottom: 1.25em;
+}
+
+#reviews p {
+    margin: 0;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+footer p {
+    font-size: .875rem;
+}
+
+h3 {
+    font-size: 20px;
+    border-bottom: solid 1pt rgb(153, 153, 153);
+    margin: 0 0 0.5em 0;
+}

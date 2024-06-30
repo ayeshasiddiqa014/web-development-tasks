@@ -1,0 +1,47 @@
+
+    body {
+        background-color: #40e371;
+        font-family: Arial, sans-serif;
+        
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    hr {
+        background-color: #1322d6;
+        color: #031c60;
+        width: 100%;
+        border: none;
+    }
+
+    .menu-link {
+        color: rgb(219, 217, 66);
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .menu-link:visited {
+        color: red;
+    }
+
+    .menu-container {
+        border-top: 2.5px solid black;
+        border-bottom: 2.5px solid black;
+    }
+
+    .underline-green {
+        text-decoration: underline;
+        color: green;
+    }
+
+    .underline-blue {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .red {
+        color: red;
+    }

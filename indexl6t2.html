@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Prompt</title>
+    <script language="javascript">
+        function askQuestion() {
+            let question = "What is the capital of France?";
+            let correctAnswer = "Paris";
+            let userAnswer = prompt(question, "");
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                alert("Success! Correct answer.");
+            } else {
+                alert("Error! Incorrect answer.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onClick="askQuestion()">Answer the Question</button>
+</body>
+</html>

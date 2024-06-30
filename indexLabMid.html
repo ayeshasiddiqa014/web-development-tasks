@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CIIT Job Application Form</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8a848d;
+            color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            width: 150px;
+            display: inline-block;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        input[type="file"] {
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpeg" width="100" height="100" style="margin-right: 10px;">
+        <h1>Job Application Form</h1>
+
+        <div
+            style="width: 120px; height: 120px; border: 2px solid #fff; border-radius: 2px; margin-left: auto;">
+            <label for="photoUpload" style="cursor: pointer;">
+                Affix a recent photograph <br> 3cm x 5cm
+                <input type="file" id="photoUpload" name="photoUpload" style="display: none;" accept="image/*">
+            </label>
+        </div>
+    </header>
+
+    <form action="your-server-side-script.php" method="post" enctype="multipart/form-data">
+
+
+        <label for="postApplied">Post Applied For:</label>
+        <input type="text" id="postApplied" name="postApplied" required><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="main">Campus:</label>
+        <input type="checkbox" id="sahiwal" name="campus" value="Sahiwal">
+        <label for="sahiwal">Sahiwal</label>
+        <input type="checkbox" id="attock" name="campus" value="Attock">
+        <label for="attock">Attock</label><br><br>
+
+        <label for="fullName">Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <input type="submit" value="Submit Form">
+
+    </form>
+</body>
+
+</html>

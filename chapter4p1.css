@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+nav,
+footer {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    background: url('april.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+table {
+    margin: 2em auto;
+    color: #666;
+    font-size: 0.85em;
+}
+
+table caption {
+    background: #d1d1e0;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.75em 0;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    font-size: 0.65em;
+    background: #e6e6f0;
+    padding: 0.25em 0;
+    color: #666;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table a {
+    color: #9370DB;
+}
+
+thead {
+    font-size: 0.65em;
+    padding: 0.25em 0;
+    color: #666;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    background: #e6e6f0;
+}
+
+table td {
+    color: #666;
+    text-shadow: 0 0.050em 0 rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #fff #ccc #ccc #fff;
+    background: #d1d1e0;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+tbody {
+    color: #666;
+    background: #d1d1e0;
+    text-shadow: 0 0.050em 0 rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #fff #ccc #ccc #fff;
+}
+
+tbody {
+    background: #e6e6f0;
+}
+
+table td.pa {
+    background: #e6e6f0;
+}
+
+tfoot {
+    color: #d1d1e0;
+    font-size: 0.750em;
+    text-align: center;
+}
+
+tfoot {
+    padding: 0.625em 0.625em;
+}
+
+table tfoot tr {
+    background: #e6e6f0;
+}
+
+table td {
+    padding: 0.625em 0.625em;
+}
+
+table tfoot a {
+    color: #9370DB;
+    text-shadow: 0 0.050em 0 rgba(255, 255, 255, 0.5);
+}
+
+table tfoot td#preview_Month {
+    text-align: left;
+}
+
+table tfoot td#next_Month {
+    text-align: right;
+}
+
+#box {
+    margin-top: 2em;
+    margin-right: auto;
+    margin-bottom: 0em;
+    margin-left: auto;
+    background-color: #d1d1e0;
+    width: 50%;
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#box p {
+    margin: 0.5em;
+}
+
+#day {
+    color: #fff;
+    border: 1px solid #666;
+    background: #9370DB;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

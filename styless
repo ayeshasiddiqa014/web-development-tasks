@@ -1,0 +1,10 @@
+/* Custom styles (you can add more) */
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+}
